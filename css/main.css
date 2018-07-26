@@ -1,0 +1,333 @@
+@import url(../css/bootstrap.min.css);
+@import url(../css/bootstrap-grid.min.css);
+/* Desktop first queries */
+/* Larger than Desktop HD */
+/* Larger than desktop */
+@media (max-width: 1269px) {
+  .price-section {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+    -webkit-flex-direction: column !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important; } }
+
+/* Larger than tablet */
+/* Larger than phablet */
+/* Larger than mobile */
+/* Larger than mobile */
+/* Larger than desktop */
+/* Larger than Desktop HD */
+header {
+  position: fixed;
+  height: 100px;
+  width: 100%;
+  -webkit-transition: .6s;
+  transition: .6s;
+  background-color: rgba(0, 0, 0, 0.2); }
+  header .navigation {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    header .navigation .logo {
+      -webkit-transition: .6s;
+      transition: .6s;
+      height: 100px;
+      margin: 0 1em; }
+    header .navigation .language {
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 80%;
+      -webkit-box-pack: end;
+      -webkit-justify-content: flex-end;
+          -ms-flex-pack: end;
+              justify-content: flex-end;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      right: 0; }
+      header .navigation .language button {
+        height: 30px;
+        background-color: transparent;
+        border: 0;
+        -webkit-transition: .6s;
+        transition: .6s;
+        border-right: 1px solid black;
+        cursor: pointer; }
+        header .navigation .language button:hover {
+          background-color: rgba(0, 0, 0, 0.3); }
+        header .navigation .language button:first-child {
+          -webkit-border-top-left-radius: 5px;
+                  border-top-left-radius: 5px;
+          -webkit-border-bottom-left-radius: 5px;
+                  border-bottom-left-radius: 5px; }
+        header .navigation .language button:last-child {
+          border: 0;
+          -webkit-border-top-right-radius: 5px;
+                  border-top-right-radius: 5px;
+          -webkit-border-bottom-right-radius: 5px;
+                  border-bottom-right-radius: 5px; }
+        header .navigation .language button:focus {
+          outline: 0; }
+      header .navigation .language .scroll-active:hover {
+        background-color: white;
+        color: black !important; }
+    header .navigation .sandwich {
+      right: 0;
+      height: 30px;
+      margin: 1em;
+      cursor: pointer;
+      z-index: 1; }
+      header .navigation .sandwich .sandwich-topper,
+      header .navigation .sandwich .sandwich-middle,
+      header .navigation .sandwich .sandwich-bottom {
+        display: block;
+        width: 30px;
+        height: 3px;
+        background-color: black;
+        margin: 5px;
+        -webkit-transition: .6s;
+        transition: .6s; }
+      header .navigation .sandwich:hover .sandwich-topper {
+        width: 10px; }
+      header .navigation .sandwich:hover .sandwich-middle {
+        width: 15px; }
+    header .navigation .navigation-list-wrapper {
+      width: 100%;
+      height: 100vh;
+      position: absolute;
+      top: 0;
+      background-color: black;
+      display: none; }
+      header .navigation .navigation-list-wrapper ul {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        list-style-type: none;
+        padding: 0;
+        height: 100vh;
+        margin: 0; }
+        header .navigation .navigation-list-wrapper ul li {
+          color: white;
+          padding: 10px 20px;
+          margin: 0 2px; }
+
+.price-section {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 0 auto;
+  text-align: center; }
+  .price-section .price-landing,
+  .price-section .price-personal,
+  .price-section .price-shop {
+    background-color: white;
+    -webkit-border-radius: 10px;
+            border-radius: 10px;
+    margin: 20px auto;
+    padding: 20px;
+    color: black;
+    max-width: 400px; }
+    .price-section .price-landing .price-information,
+    .price-section .price-personal .price-information,
+    .price-section .price-shop .price-information {
+      font-weight: lighter; }
+    .price-section .price-landing .price-sale,
+    .price-section .price-personal .price-sale,
+    .price-section .price-shop .price-sale {
+      color: grey;
+      font-weight: bold;
+      line-height: 0;
+      text-decoration: line-through;
+      margin: 30px 0 0 0; }
+    .price-section .price-landing .price-value,
+    .price-section .price-personal .price-value,
+    .price-section .price-shop .price-value {
+      font-size: 34px;
+      font-weight: bold; }
+    .price-section .price-landing i,
+    .price-section .price-personal i,
+    .price-section .price-shop i {
+      padding: 11px 20px;
+      -webkit-border-top-left-radius: 10px;
+              border-top-left-radius: 10px;
+      -webkit-border-bottom-left-radius: 10px;
+              border-bottom-left-radius: 10px;
+      background-color: yellow;
+      color: black;
+      border: 1px solid black;
+      border-right: 0; }
+    .price-section .price-landing .button,
+    .price-section .price-personal .button,
+    .price-section .price-shop .button {
+      -webkit-border-top-left-radius: 0;
+              border-top-left-radius: 0;
+      -webkit-border-bottom-left-radius: 0;
+              border-bottom-left-radius: 0;
+      background-color: white;
+      color: black;
+      border: 1px solid black;
+      border-left: 0; }
+      .price-section .price-landing .button:hover,
+      .price-section .price-personal .button:hover,
+      .price-section .price-shop .button:hover {
+        cursor: pointer;
+        color: black;
+        -webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+                box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5); }
+
+.benefits-section .benefits-wrapper {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  overflow: hidden;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .benefits-section .benefits-wrapper .benefits-item {
+    background-color: yellow;
+    width: 33%;
+    max-width: 250px;
+    margin: 20px;
+    padding: 20px 40px;
+    -webkit-border-radius: 10px;
+            border-radius: 10px; }
+    .benefits-section .benefits-wrapper .benefits-item h4 {
+      color: black; }
+    .benefits-section .benefits-wrapper .benefits-item .line {
+      background-color: black; }
+    .benefits-section .benefits-wrapper .benefits-item i {
+      background-color: black;
+      color: yellow;
+      padding: 15px;
+      margin: 20px;
+      -webkit-border-radius: 10px;
+              border-radius: 10px; }
+    .benefits-section .benefits-wrapper .benefits-item p {
+      color: black; }
+
+.benefits-section ol {
+  padding: 20px;
+  width: 66%;
+  text-align: left;
+  margin: 20px auto;
+  list-style-type: none;
+  counter-reset: num;
+  border: 1px solid white; }
+  .benefits-section ol h3 {
+    background-color: white;
+    color: black;
+    margin: 0 auto;
+    padding: 20px; }
+  .benefits-section ol .line {
+    margin: 20px auto 0 auto;
+    background-color: white; }
+  .benefits-section ol li {
+    font-weight: lighter; }
+    .benefits-section ol li::before {
+      content: counter(num) " ";
+      counter-increment: num;
+      font-weight: normal;
+      font-size: 30px; }
+
+.benefits-section p {
+  font-weight: lighter;
+  width: 66%;
+  margin: 20px auto; }
+
+.contacts-section .line {
+  background-color: white;
+  margin: 20px auto; }
+
+.contacts-section .contact-wrapper {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .contacts-section .contact-wrapper .contact-item {
+    padding: 20px; }
+    .contacts-section .contact-wrapper .contact-item i {
+      font-size: 30px; }
+    .contacts-section .contact-wrapper .contact-item p {
+      font-weight: lighter; }
+
+body {
+  text-align: center; }
+
+.line {
+  display: block;
+  width: 44%;
+  margin: 0 auto;
+  height: 1px; }
+
+.button {
+  padding: 10px 20px;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  -webkit-transition: .6s;
+  transition: .6s; }
+
+main {
+  color: white; }
+  main img {
+    height: 100vh;
+    width: 100%; }

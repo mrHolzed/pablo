@@ -1,0 +1,71 @@
+.benefits-section .benefits-wrapper {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  overflow: hidden;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .benefits-section .benefits-wrapper .benefits-item {
+    background-color: yellow;
+    width: 33%;
+    max-width: 250px;
+    margin: 20px;
+    padding: 20px 40px;
+    -webkit-border-radius: 10px;
+            border-radius: 10px; }
+    .benefits-section .benefits-wrapper .benefits-item h4 {
+      color: black; }
+    .benefits-section .benefits-wrapper .benefits-item .line {
+      background-color: black; }
+    .benefits-section .benefits-wrapper .benefits-item i {
+      background-color: black;
+      color: yellow;
+      padding: 15px;
+      margin: 20px;
+      -webkit-border-radius: 10px;
+              border-radius: 10px; }
+    .benefits-section .benefits-wrapper .benefits-item p {
+      color: black; }
+
+.benefits-section ol {
+  padding: 20px;
+  width: 66%;
+  text-align: left;
+  margin: 20px auto;
+  list-style-type: none;
+  counter-reset: num;
+  border: 1px solid white; }
+  .benefits-section ol h3 {
+    background-color: white;
+    color: black;
+    margin: 0 auto;
+    padding: 20px; }
+  .benefits-section ol .line {
+    margin: 20px auto 0 auto;
+    background-color: white; }
+  .benefits-section ol li {
+    font-weight: lighter; }
+    .benefits-section ol li::before {
+      content: counter(num) " ";
+      counter-increment: num;
+      font-weight: normal;
+      font-size: 30px; }
+
+.benefits-section p {
+  font-weight: lighter;
+  width: 66%;
+  margin: 20px auto; }

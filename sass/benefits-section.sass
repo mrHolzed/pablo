@@ -1,0 +1,57 @@
+.benefits-section
+  .benefits-wrapper
+    display: -webkit-flex
+    display: -moz-flex
+    display: -ms-flex
+    display: -o-flex
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    overflow: hidden
+    justify-content: center
+    .benefits-item
+      background-color: yellow
+      width: 33%
+      max-width: 250px
+      margin: 20px
+      padding: 20px 40px
+      border-radius: 10px
+      h4
+        color: black
+      .line
+        background-color: black
+      i
+        background-color: black
+        color: yellow
+        padding: 15px
+        margin: 20px
+        border-radius: 10px
+      p
+        color: black
+  ol
+    padding: 20px
+    width: 66%
+    text-align: left
+    margin: 20px auto
+    list-style-type: none
+    counter-reset: num
+    border: 1px solid white
+    h3
+      background-color: white
+      color: black
+      margin: 0 auto
+      padding: 20px
+    .line
+      margin: 20px auto 0 auto
+      background-color: white
+    li
+      font-weight: lighter
+      &::before
+        content: counter(num) " "
+        counter-increment: num
+        font-weight: normal
+        font-size: 30px
+  p
+    font-weight: lighter
+    width: 66%
+    margin: 20px auto

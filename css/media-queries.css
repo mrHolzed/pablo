@@ -1,0 +1,17 @@
+/* Desktop first queries */
+/* Larger than Desktop HD */
+/* Larger than desktop */
+@media (max-width: 1269px) {
+  .price-section {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+    -webkit-flex-direction: column !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important; } }
+
+/* Larger than tablet */
+/* Larger than phablet */
+/* Larger than mobile */
+/* Larger than mobile */
+/* Larger than desktop */
+/* Larger than Desktop HD */

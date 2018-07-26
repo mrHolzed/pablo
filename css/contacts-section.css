@@ -1,0 +1,22 @@
+.contacts-section .line {
+  background-color: white;
+  margin: 20px auto; }
+
+.contacts-section .contact-wrapper {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .contacts-section .contact-wrapper .contact-item {
+    padding: 20px; }
+    .contacts-section .contact-wrapper .contact-item i {
+      font-size: 30px; }
+    .contacts-section .contact-wrapper .contact-item p {
+      font-weight: lighter; }

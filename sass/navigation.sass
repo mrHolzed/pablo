@@ -1,0 +1,100 @@
+header
+  position: fixed
+  height: 100px
+  width: 100%
+  transition: .6s
+  background-color: rgba(0,0,0,.2)
+  .navigation
+    display: -webkit-flex
+    display: -moz-flex
+    display: -ms-flex
+    display: -o-flex
+    display: flex
+    align-items: center
+    .logo
+      transition: .6s
+      // float: left
+      height: 100px
+      margin: 0 1em
+    .language
+      display: -webkit-flex
+      display: -moz-flex
+      display: -ms-flex
+      display: -o-flex
+      display: flex
+      width: 80%
+      justify-content: flex-end
+      align-items: center
+      // position: absolute
+      right: 0
+      // margin: 40px 100px
+      button
+        height: 30px
+        background-color: transparent
+        border: 0
+        transition: .6s
+        border-right: 1px solid black
+        cursor: pointer
+        &:hover
+          background-color: rgba(0,0,0,.3)
+        &:first-child
+          border-top-left-radius: 5px
+          border-bottom-left-radius: 5px
+        &:last-child
+          border: 0
+          border-top-right-radius: 5px
+          border-bottom-right-radius: 5px
+        &:focus
+          outline: 0
+      .scroll-active
+        &:hover
+          background-color: white
+          color: black !important
+    .sandwich
+      // position: absolute
+      right: 0
+      height: 30px
+      margin: 1em
+      cursor: pointer
+      z-index: 1
+      .sandwich-topper,
+      .sandwich-middle,
+      .sandwich-bottom
+        display: block
+        width: 30px
+        height: 3px
+        background-color: black
+        margin: 5px
+        transition: .6s
+      &:hover
+        .sandwich-topper
+          width: 10px
+        .sandwich-middle
+          width: 15px
+        .sandwich-bottom
+    .navigation-list-wrapper
+      width: 100%
+      height: 100vh
+      position: absolute
+      top: 0
+      background-color: black
+      display: none
+      ul
+        display: -webkit-flex
+        display: -moz-flex
+        display: -ms-flex
+        display: -o-flex
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+        list-style-type: none
+        padding: 0
+        height: 100vh
+        margin: 0
+        li
+          // display: inline-block
+          // background-color: rgba(0,0,0,.8)
+          color: white
+          padding: 10px 20px
+          margin: 0 2px
