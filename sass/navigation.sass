@@ -36,7 +36,8 @@ header
         border-right: 1px solid black
         cursor: pointer
         &:hover
-          background-color: rgba(0,0,0,.3)
+          color: white !important
+          background-color: black
         &:first-child
           border-top-left-radius: 5px
           border-bottom-left-radius: 5px
@@ -72,6 +73,20 @@ header
         .sandwich-middle
           width: 15px
         .sandwich-bottom
+    .sandwich.active
+      transition: .6s
+      .sandwich-topper
+        transform: translate(0, 8px) rotate(45deg)
+      .sandwich-middle
+        opacity: 0
+      .sandwich-bottom
+        transform: translate(0, -8px) rotate(-45deg)
+      &:hover
+        transform: rotate(360deg)
+        .sandwich-topper,
+        .sandwich-middle,
+        .sandwich-bottom
+          width: 30px
     .navigation-list-wrapper
       width: 100%
       height: 100vh
@@ -93,8 +108,14 @@ header
         height: 100vh
         margin: 0
         li
-          // display: inline-block
-          // background-color: rgba(0,0,0,.8)
           color: white
-          padding: 10px 20px
+          width: 55%
           margin: 0 2px
+          a
+            padding: 20px
+            width: 100%
+            display: block
+            cursor: pointer
+            &:hover
+              color: black
+              background-color: white

@@ -49,7 +49,8 @@ header {
         border-right: 1px solid black;
         cursor: pointer; }
         header .navigation .language button:hover {
-          background-color: rgba(0, 0, 0, 0.3); }
+          color: white !important;
+          background-color: black; }
         header .navigation .language button:first-child {
           -webkit-border-top-left-radius: 5px;
                   border-top-left-radius: 5px;
@@ -86,6 +87,27 @@ header {
         width: 10px; }
       header .navigation .sandwich:hover .sandwich-middle {
         width: 15px; }
+    header .navigation .sandwich.active {
+      -webkit-transition: .6s;
+      transition: .6s; }
+      header .navigation .sandwich.active .sandwich-topper {
+        -webkit-transform: translate(0, 8px) rotate(45deg);
+            -ms-transform: translate(0, 8px) rotate(45deg);
+                transform: translate(0, 8px) rotate(45deg); }
+      header .navigation .sandwich.active .sandwich-middle {
+        opacity: 0; }
+      header .navigation .sandwich.active .sandwich-bottom {
+        -webkit-transform: translate(0, -8px) rotate(-45deg);
+            -ms-transform: translate(0, -8px) rotate(-45deg);
+                transform: translate(0, -8px) rotate(-45deg); }
+      header .navigation .sandwich.active:hover {
+        -webkit-transform: rotate(360deg);
+            -ms-transform: rotate(360deg);
+                transform: rotate(360deg); }
+        header .navigation .sandwich.active:hover .sandwich-topper,
+        header .navigation .sandwich.active:hover .sandwich-middle,
+        header .navigation .sandwich.active:hover .sandwich-bottom {
+          width: 30px; }
     header .navigation .navigation-list-wrapper {
       width: 100%;
       height: 100vh;
@@ -120,5 +142,13 @@ header {
         margin: 0; }
         header .navigation .navigation-list-wrapper ul li {
           color: white;
-          padding: 10px 20px;
+          width: 55%;
           margin: 0 2px; }
+          header .navigation .navigation-list-wrapper ul li a {
+            padding: 20px;
+            width: 100%;
+            display: block;
+            cursor: pointer; }
+            header .navigation .navigation-list-wrapper ul li a:hover {
+              color: black;
+              background-color: white; }

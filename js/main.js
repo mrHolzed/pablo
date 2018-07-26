@@ -3,10 +3,12 @@ $(document).ready(function(){
   $('.sandwich').click(function(){
     if ($('.navigation-list-wrapper').hasClass('active')) {
       $('.navigation-list-wrapper').removeClass('active').css('display','none');
+      $('.sandwich').removeClass('active');
       if (window.pageYOffset < 300) {
         $('.sandwich').children().css('background-color', 'black');
       }
     } else {
+      $('.sandwich').addClass('active');
       $('.navigation-list-wrapper').addClass('active').css('display','block');
       $('.sandwich').css('z-index', 1).children().css('background-color', 'white');
     }
