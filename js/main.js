@@ -6,6 +6,9 @@ $(document).ready(function(){
       $('.sandwich').removeClass('active');
       if (window.pageYOffset < 300) {
         $('.sandwich').children().css('background-color', 'black');
+      } else if ($('.navigation').children().hasClass('active')) {
+        // $('.sandwich').children().css('background-color', 'white');
+        alert('1');
       }
     } else {
       $('.sandwich').addClass('active');

@@ -1,0 +1,67 @@
+@-webkit-keyframes hover-v {
+  0% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    height: 5px; }
+  45% {
+    -webkit-transform: scaleX(1.05);
+            transform: scaleX(1.05);
+    height: 5px; }
+  55% {
+    height: 5px; }
+  100% {
+    -webkit-transform: scaleX(1.05);
+            transform: scaleX(1.05);
+    height: 3.8rem; } }
+
+@keyframes hover-v {
+  0% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    height: 5px; }
+  45% {
+    -webkit-transform: scaleX(1.05);
+            transform: scaleX(1.05);
+    height: 5px; }
+  55% {
+    height: 5px; }
+  100% {
+    -webkit-transform: scaleX(1.05);
+            transform: scaleX(1.05);
+    height: 3.8rem; } }
+
+@-webkit-keyframes no-hover-v {
+  0% {
+    -webkit-transform: scaleX(1.05);
+            transform: scaleX(1.05);
+    height: 3.8rem; }
+  45% {
+    height: 5px; }
+  55% {
+    -webkit-transform: scaleX(1.05);
+            transform: scaleX(1.05);
+    height: 5px;
+    opacity: 1; }
+  100% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    height: 5px;
+    opacity: .02; } }
+
+@keyframes no-hover-v {
+  0% {
+    -webkit-transform: scaleX(1.05);
+            transform: scaleX(1.05);
+    height: 3.8rem; }
+  45% {
+    height: 5px; }
+  55% {
+    -webkit-transform: scaleX(1.05);
+            transform: scaleX(1.05);
+    height: 5px;
+    opacity: 1; }
+  100% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    height: 5px;
+    opacity: .02; } }
