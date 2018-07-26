@@ -10,9 +10,9 @@ html
       div.navigation
         img(class="logo" src="img/solopov.svg", alt="")
         div.language
-          button EN
-          button LT
-          button RU
+          button(class="translate" id="en") EN
+          button(class="translate" id="lt") LT
+          button(class="translate" id="ru") RU
         div.sandwich
           span.sandwich-topper
           span.sandwich-middle
@@ -20,11 +20,11 @@ html
         div.navigation-list-wrapper
           ul
             li
-              a home
+              a(class="lang" key="home") home
             li
-              a site
+              a(class="lang" key="site") site
             li
-              a contacts
+              a(class="lang" key="contacts") contacts
     main
       img(src="img/bg.jpg", alt="")
       h1 Sites
@@ -112,3 +112,4 @@ html
     footer
 script(src="js/jquery.min.js")
 script(src="js/main.js")
+script(src="js/lang.js")
