@@ -24,6 +24,10 @@ $(document).ready(function(){
       $('.lang').each(function(index, element){
         $(this).text(arrLang[lang][$(this).attr('key')]);
       });
+      if ($('.language button').hasClass('active')) {
+        $('.language button').removeClass('active');
+        $(this).addClass('active');
+      }
     });
   });
 

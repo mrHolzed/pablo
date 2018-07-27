@@ -65,8 +65,14 @@ header {
                   border-bottom-right-radius: 5px; }
         header .navigation .language button:focus {
           outline: 0; }
-      header .navigation .language .scroll-active:hover {
+      header .navigation .language .active {
+        background-color: black;
+        color: white !important; }
+      header .navigation .language .scrolled:hover {
         background-color: white;
+        color: black !important; }
+      header .navigation .language .scrolled-active {
+        background-color: white !important;
         color: black !important; }
     header .navigation .sandwich {
       right: 0;
