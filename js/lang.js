@@ -24,9 +24,13 @@ $(document).ready(function(){
       $('.lang').each(function(index, element){
         $(this).text(arrLang[lang][$(this).attr('key')]);
       });
-      if ($('.language button').hasClass('active')) {
-        $('.language button').removeClass('active');
+      if ($('.language button').hasClass('active') || $('.language button').hasClass('scrolled-active')) {
+        $('.language button').removeClass('active').removeClass('scrolled-active');
         $(this).addClass('active');
+      }
+      if (window.pageYOffset > 300) {
+        $('.language button').removeClass('active').removeClass('scrolled-active');
+        $(this).addClass('scrolled-active');
       }
     });
   });

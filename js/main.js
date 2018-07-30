@@ -6,9 +6,6 @@ $(document).ready(function(){
       $('.sandwich').removeClass('active');
       if (window.pageYOffset < 300) {
         $('.sandwich').children().css('background-color', 'black');
-      } else if ($('.navigation').children().hasClass('active')) {
-        // $('.sandwich').children().css('background-color', 'white');
-        alert('1');
       }
     } else {
       $('.sandwich').addClass('active');
@@ -19,26 +16,22 @@ $(document).ready(function(){
 
   $(window).scroll(function(){
     if (window.pageYOffset > 300) {
+      button = $(".navigation .language button[class*='active']")
       $('.logo').css('height','60px').attr('src','img/solopov-white.svg');
       $('header').css('height','60px').css('background-color','black');
       $('.navigation .language button').css('cssText', 'color: white;' + 'border-color: white;');
       $('.sandwich').children().css('background-color','white');
       $('.language button').addClass('scrolled');
-        // if ($('.language button').hasClass('active')) {
-        //   // alert('1')
-        //   var act = $('.language button').hasClass('active');
-        //   $('.language button').removeClass('active');
-        //   $('this').addClass('scrolled-active');
-        // } else {
-        //   $(this).addClass('active');
-        // }
+      if (window.pageYOffset > 300) {
+        button.removeClass('active').addClass('scrolled-active');
+      }
     } else {
       $('.logo').attr('src','img/solopov.svg').css('height','100px');
       $('header').css('height','100px').css('background-color','rgba(0,0,0,.2)');
       $('.navigation .language button').css('color','black').css('border-color','black');
       $('.sandwich').children().css('background-color','black');
       $('.language button').removeClass('scrolled');
-      $('.language button.active').css('background-color','black').css('color','white');
+      button.removeClass('scrolled-active').addClass('active');
     }
   });
 
