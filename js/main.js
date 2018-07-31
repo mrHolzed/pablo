@@ -15,8 +15,8 @@ $(document).ready(function(){
   });
 
   $(window).scroll(function(){
+    button = $(".navigation .language button[class*='active']")
     if (window.pageYOffset > 300) {
-      button = $(".navigation .language button[class*='active']")
       $('.logo').css('height','60px').attr('src','img/solopov-white.svg');
       $('header').css('height','60px').css('background-color','black');
       $('.navigation .language button').css('cssText', 'color: white;' + 'border-color: white;');

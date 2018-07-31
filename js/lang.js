@@ -40,6 +40,7 @@ $(document).ready(function(){
 
   $.get('https://ipapi.co/country/', function(data){
     var langchecker = JSON.stringify(data, null, 4);
+    alert(langchecker);
     langchecker = JSON.parse(langchecker);
 
     if (langchecker == 'RU') {
