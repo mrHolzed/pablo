@@ -11,7 +11,7 @@ html
         img(class="logo" src="img/solopov.svg", alt="")
         div.language
           button(class="translate active" id="en") EN
-          button(class="translate" id="lt") LT
+          //- button(class="translate" id="lt") LT
           button(class="translate" id="ru") RU
         div.sandwich
           span.sandwich-topper
@@ -31,7 +31,7 @@ html
       div.price-section
         div.price-landing
           h2 Landing page
-          p.price-information Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore ipsum odit animi rem? Vitae, non expedita pariatur quam repudiandae, sunt praesentium neque a autem animi, dolorem quos, temporibus rem voluptatibus.
+          p(class="price-information") Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore ipsum odit animi rem? Vitae, non expedita pariatur quam repudiandae, sunt praesentium neque a autem animi, dolorem quos, temporibus rem voluptatibus.
           p.price-sale 640$
           p.price-value 490$
           i.fas.fa-info
@@ -113,3 +113,6 @@ html
 script(src="js/jquery.min.js")
 script(src="js/main.js")
 script(src="js/lang.js")
+script.
+  var userLang = navigator.language || navigator.userLanguage; 
+  alert("The language is: " + userLang);
