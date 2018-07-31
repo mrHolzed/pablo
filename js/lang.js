@@ -1,25 +1,6 @@
 $(document).ready(function(){
-  // $.getJSON("http://freegeoip.net/json/", function(data) {
-  //   var country_code = data.country_code;
-  //   var country = data.country_name;
-  //   var ip = data.ip;
-  //   var time_zone = data.time_zone;
-  //   var latitude = data.latitude;
-  //   var longitude = data.longitude;
-  //
-  //   alert("Country Code: " + country_code);
-  //   alert("Country Name: " + country);
-  //   alert("IP: " + ip);
-  //   alert("Time Zone: " + time_zone);
-  //   alert("Latitude: " + latitude);
-  //   alert("Longitude: " + longitude);
-  // });
-  //
-  // $.get("http://freegeoip.net/json/", function (response) {
-  //   $("#ip").html("IP: " + response.ip);
-  //   $("#address").html("Location: " + response.city + ", " + response.region_name);
-  //   $("#details").html(JSON.stringify(response, null, 4));
-  // }, "jsonp");
+
+
 
   var arrLang = {
     'en' : {
@@ -55,6 +36,22 @@ $(document).ready(function(){
         $(this).addClass('scrolled-active');
       }
     });
+  });
+
+  $.get('https://ipapi.co/country/', function(data){
+    var langchecker = JSON.stringify(data, null, 4);
+    langchecker = JSON.parse(langchecker);
+
+    if (langchecker == 'RU') {
+      if ($('.language button').hasClass('active')) {
+        $(".navigation .language button[class*='active']").removeClass('active');
+        $("#ru").addClass('active')
+      }
+      var lang = $('#ru').attr('id');
+      $('.lang').each(function(index, element){
+        $(this).text(arrLang[lang][$(this).attr('key')]);
+      });
+    }
   });
 
 });
