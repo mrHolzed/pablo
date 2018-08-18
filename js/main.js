@@ -26,7 +26,7 @@ $(document).ready(function(){
         button.removeClass('active').addClass('scrolled-active');
       }
     } else {
-      $('.logo').attr('src','img/solopov.svg').css('height','100px');
+      $('.logo').css('height','100px');
       $('header').css('height','100px').css('background-color','rgba(0,0,0,.2)');
       $('.navigation .language button').css('color','black').css('border-color','black');
       $('.sandwich').children().css('background-color','black');

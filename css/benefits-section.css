@@ -1,3 +1,11 @@
+.benefits-section h2 {
+  background-color: white;
+  color: black;
+  font-weight: lighter;
+  padding: 20px 0;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); }
+
 .benefits-section .benefits-wrapper {
   display: -webkit-flex;
   display: -moz-flex;
@@ -24,21 +32,26 @@
     width: 33%;
     max-width: 250px;
     margin: 20px;
-    padding: 20px 40px;
+    padding: 10px 40px;
     -webkit-border-radius: 10px;
-            border-radius: 10px; }
+            border-radius: 10px;
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); }
     .benefits-section .benefits-wrapper .benefits-item h4 {
-      color: black; }
+      color: black;
+      font-weight: lighter; }
+    .benefits-section .benefits-wrapper .benefits-item .fa-stack {
+      margin: 20px; }
     .benefits-section .benefits-wrapper .benefits-item .line {
+      height: 1px;
+      width: 22%;
       background-color: black; }
     .benefits-section .benefits-wrapper .benefits-item i {
-      background-color: black;
-      color: yellow;
-      padding: 15px;
-      margin: 20px;
-      -webkit-border-radius: 10px;
-              border-radius: 10px; }
+      color: black; }
+    .benefits-section .benefits-wrapper .benefits-item .fa-inverse {
+      color: white !important; }
     .benefits-section .benefits-wrapper .benefits-item p {
+      margin: 10px auto;
       color: black; }
 
 .benefits-section ol {
@@ -48,15 +61,22 @@
   margin: 20px auto;
   list-style-type: none;
   counter-reset: num;
-  border: 1px solid white; }
+  border: 1px solid white;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  background-color: white;
+  color: black;
+  -webkit-border-radius: 10px;
+          border-radius: 10px; }
   .benefits-section ol h3 {
-    background-color: white;
-    color: black;
+    font-weight: lighter;
+    background-color: black;
+    color: white;
     margin: 0 auto;
     padding: 20px; }
   .benefits-section ol .line {
     margin: 20px auto 0 auto;
-    background-color: white; }
+    background-color: black; }
   .benefits-section ol li {
     font-weight: lighter; }
     .benefits-section ol li::before {

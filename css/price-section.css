@@ -1,72 +1,80 @@
 .price-section {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  margin: 0 auto;
-  text-align: center; }
-  .price-section .price-landing,
-  .price-section .price-personal,
-  .price-section .price-shop {
+  text-align: center;
+  margin: 20px 0; }
+  .price-section h1 {
+    font-weight: lighter;
     background-color: white;
-    -webkit-border-radius: 10px;
-            border-radius: 10px;
-    margin: 20px auto;
-    padding: 20px;
     color: black;
-    max-width: 400px; }
-    .price-section .price-landing .price-information,
-    .price-section .price-personal .price-information,
-    .price-section .price-shop .price-information {
-      font-weight: lighter; }
-    .price-section .price-landing .price-sale,
-    .price-section .price-personal .price-sale,
-    .price-section .price-shop .price-sale {
-      color: grey;
-      font-weight: bold;
-      line-height: 0;
-      text-decoration: line-through;
-      margin: 30px 0 0 0; }
-    .price-section .price-landing .price-value,
-    .price-section .price-personal .price-value,
-    .price-section .price-shop .price-value {
-      font-size: 34px;
-      font-weight: bold; }
-    .price-section .price-landing i,
-    .price-section .price-personal i,
-    .price-section .price-shop i {
-      padding: 11px 20px;
-      -webkit-border-top-left-radius: 10px;
-              border-top-left-radius: 10px;
-      -webkit-border-bottom-left-radius: 10px;
-              border-bottom-left-radius: 10px;
-      background-color: yellow;
-      color: black;
-      border: 1px solid black;
-      border-right: 0; }
-    .price-section .price-landing .button,
-    .price-section .price-personal .button,
-    .price-section .price-shop .button {
-      -webkit-border-top-left-radius: 0;
-              border-top-left-radius: 0;
-      -webkit-border-bottom-left-radius: 0;
-              border-bottom-left-radius: 0;
+    padding: 20px 0;
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); }
+  .price-section .price-section-wrapper {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 0 auto; }
+    .price-section .price-section-wrapper #container {
+      -webkit-perspective: 40px;
+              perspective: 40px; }
+      .price-section .price-section-wrapper #container #inner {
+        -webkit-transition: -webkit-transform 0.5s;
+        transition: -webkit-transform 0.5s;
+        transition: transform 0.5s;
+        transition: transform 0.5s, -webkit-transform 0.5s; }
+    .price-section .price-section-wrapper .price-item {
       background-color: white;
+      -webkit-border-radius: 10px;
+              border-radius: 10px;
+      margin: 20px auto;
+      padding: 20px;
       color: black;
-      border: 1px solid black;
-      border-left: 0; }
-      .price-section .price-landing .button:hover,
-      .price-section .price-personal .button:hover,
-      .price-section .price-shop .button:hover {
-        cursor: pointer;
-        color: black;
-        -webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
-                box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5); }
+      max-width: 350px;
+      -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+              box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); }
+      .price-section .price-section-wrapper .price-item h2 {
+        font-size: 24px;
+        padding: 20px;
+        margin: 0; }
+      .price-section .price-section-wrapper .price-item img {
+        width: 100%;
+        height: 100px;
+        padding: 20px; }
+      .price-section .price-section-wrapper .price-item .price-information {
+        font-size: 14px;
+        font-weight: lighter;
+        padding: 20px;
+        margin: 0; }
+      .price-section .price-section-wrapper .price-item .price-sale {
+        color: grey;
+        font-weight: bold;
+        line-height: 0;
+        text-decoration: line-through;
+        margin: 20px 0 0 0;
+        padding: 0; }
+      .price-section .price-section-wrapper .price-item .price-value {
+        font-size: 34px;
+        font-weight: bold;
+        margin: 0 0 20px 0;
+        padding: 0; }
+      .price-section .price-section-wrapper .price-item a {
+        font-size: 24px;
+        border-bottom: 5px solid black;
+        padding: 6px 2px;
+        margin: 14px 20px;
+        -webkit-transition: .39s;
+        transition: .39s; }
+        .price-section .price-section-wrapper .price-item a:hover {
+          color: #ff8859;
+          padding: 6px 14px;
+          border-color: #00b2f0;
+          -webkit-border-radius: 5px;
+                  border-radius: 5px; }

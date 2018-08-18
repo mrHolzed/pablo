@@ -8,7 +8,7 @@ html
   body
     header
       div.navigation
-        img(class="logo" src="img/solopov.svg", alt="")
+        img(class="logo" src="img/solopov-white.svg", alt="")
         div.language
           button(class="translate active" id="en") EN
           //- button(class="translate" id="lt") LT
@@ -27,64 +27,64 @@ html
               a(class="lang" key="contacts") contacts
     main
       img(src="img/bg.jpg", alt="")
-      h1 Sites
+      span.bg-parallax
       div.price-section
-        div.price-landing
-          h2 Landing page
-          p(class="price-information") Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore ipsum odit animi rem? Vitae, non expedita pariatur quam repudiandae, sunt praesentium neque a autem animi, dolorem quos, temporibus rem voluptatibus.
-          p.price-sale 640$
-          p.price-value 490$
-          i.fas.fa-info
-          a.button show demo
-        div.price-personal
-          h2 Personal website
-          p.price-information Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et dolorum nisi odio, quis excepturi ipsam vero! Provident harum autem nostrum dignissimos, excepturi eveniet, corporis labore beatae reprehenderit, enim eum sint.
-          p.price-sale 730$
-          p.price-value 590$
-          i.fas.fa-info
-          a.button show demo
-        div.price-shop
-          h2 Online shop
-          p.price-information Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita natus aperiam eveniet nulla. Voluptate vel rerum, ipsum. Laborum a ipsa, dolorem nisi quos nesciunt voluptatum soluta, numquam inventore cupiditate ipsum.
-          p.price-sale 820$
-          p.price-value 690$
-          i.fas.fa-info
-          a.button show demo
+        h1.lang(key="h1-price-section") Sites
+        div.price-section-wrapper
+          div.price-item.price-landing
+            h2.lang(key="h2-landing") Landing page
+            img(src="../img/solopov.svg")
+            p(class="price-information") Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore ipsum odit animi rem? Vitae, non expedita pariatur quam repudiandae, sunt praesentium neque a autem animi, dolorem quos, temporibus rem voluptatibus.
+            p.price-sale 640$
+            p.price-value 490$
+            a.fas.fa-search
+          div.price-item.price-personal
+            h2.lang(key="h2-personal") Personal website
+            img(src="../img/solopov.svg")
+            p.price-information Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et dolorum nisi odio, quis excepturi ipsam vero! Provident harum autem nostrum dignissimos, excepturi eveniet, corporis labore beatae reprehenderit, enim eum sint.
+            p.price-sale 730$
+            p.price-value 590$
+            a.fa.fa-search
+          //- div.price-item.price-shop
+            h2 Online shop
+            img(src="../img/solopov.svg")
+            p.price-information Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita natus aperiam eveniet nulla. Voluptate vel rerum, ipsum. Laborum a ipsa, dolorem nisi quos nesciunt voluptatum soluta, numquam inventore cupiditate ipsum.
+            p.price-sale 820$
+            p.price-value 690$
+            a.fas.fa-search
       div.benefits-section
-        h2 Why our clients trust us
+        h2.lang(key="h2-benefits-section") Why our clients choose us
         div.benefits-wrapper
           div.benefits-item
-            i.fas.fa-check
-            h4 Something
+            span.fa-stack.fa-2x
+              i.fas.fa-certificate.fa-stack-2x
+              i.fas.fa-check.fa-stack-1x.fa-inverse
+            h4.lang(key="benefits-quality") Quality
             span.line
-            p Text
+            p.lang(key="benefits-quality-text") High quality websites
           div.benefits-item
-            i.fas.fa-check
-            h4 Something
+            span.fa-stack.fa-2x
+              i.fas.fa-square.fa-stack-2x
+              i.far.fa-clock.fa-stack-1x.fa-inverse
+            h4.lang(key="benefits-time") Time
             span.line
-            p Text
+            p.lang(key="benefits-time-text") Fast development
           div.benefits-item
-            i.fas.fa-check
-            h4 Something
+            span.fa-stack.fa-2x
+              i.fas.fa-square.fa-stack-2x
+              i.fas.fa-dollar-sign.fa-stack-1x.fa-inverse
+            h4.lang(key="benefits-price") Price
             span.line
-            p Text
+            p.lang(key="benefits-price-text") Low price
           div.benefits-item
-            i.fas.fa-check
-            h4 Something
+            span.fa-stack.fa-2x
+              i.fas.fa-square.fa-stack-2x
+              i.fas.fa-headset.fa-stack-1x.fa-inverse
+            h4.lang(key="benefits-support") Support
             span.line
-            p Text
-          div.benefits-item
-            i.fas.fa-check
-            h4 Something
-            span.line
-            p Text
-          div.benefits-item
-            i.fas.fa-check
-            h4 Something
-            span.line
-            p Text
+            p.lang(key="benefits-support-text") best support for your projects
         ol
-          h3 What included in the price
+          h3.lang(key="h3-benefits-section") What included in the price
           li Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae placeat doloremque fugit, esse in, exercitationem ipsa laborum consectetur id velit enim recusandae a repellat, quas natus reiciendis blanditiis culpa, eveniet!
           span.line
           li Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta ut, odio, saepe, pariatur excepturi rerum delectus ea aperiam sed expedita quibusdam totam nemo incidunt aut vero ad veniam est illum!
@@ -113,3 +113,4 @@ html
 script(src="js/jquery.min.js")
 script(src="js/main.js")
 script(src="js/lang.js")
+//- script(src="js/price-transform.js")

@@ -2,7 +2,7 @@
 /* Larger than Desktop HD */
 /* Larger than desktop */
 @media (max-width: 1269px) {
-  .price-section {
+  .price-section-wrapper {
     -webkit-box-orient: vertical !important;
     -webkit-box-direction: normal !important;
     -webkit-flex-direction: column !important;
